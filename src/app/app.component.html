@@ -1,0 +1,33 @@
+<div class="big-container">
+  <h1>Diagrama de Procesos</h1>
+
+  <div class="main">
+    <table class="table table-sm">
+      <thead class="table-light">
+        <tr>
+          <td>PID</td>
+          <td>Name</td>
+          <td>Time</td>
+          <td>Status</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let process of simulation.showList">
+          <td>{{process.pid}}</td>
+          <td>{{process.name}}</td>
+          <td>{{process.burst}}</td>
+          <td class="{{getClass(process.status)}}">{{process.status}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="information">
+    <p><strong>Tiempo transcurrido:</strong> {{simulation.time}} Unidades de tiempo</p>
+    <p><strong>Quantum:</strong> {{simulation.quantum}} Unidades de tiempo</p>
+  </div>
+
+
+
+</div>

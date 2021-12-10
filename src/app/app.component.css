@@ -1,0 +1,40 @@
+td{
+    border-right: solid;
+}
+
+.table{
+    width: 70%;
+    margin-left: 2%;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pruple{
+    background-color: purple;
+}
+
+.main{
+    display: flex;
+}
